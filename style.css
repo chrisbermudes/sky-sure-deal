@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    background-color: #f8f4ec;
+    background-image: url(images/liver.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #000;
+}
+section nav{
+    width: 100%;
+    height: 70px;
+    padding-top: 25px;
+    background: #fff;
+}
+section nav ul {
+    list-style: none;
+    text-align: center;
+}
+section nav ul li{
+    display: inline-block;
+    font-size: 21px;
+    margin: 0 18px;
+    font-family: "Euphemia";
+    cursor: pointer;
+    transition: 0.4s;
+}
+section nav ul li{
+    color: #98e54c;
+} 
+section .text{
+    position: absolute;
+    top: 250px;
+    left: 5%;
+}
+
+section .text .word{
+    color: #cfcfcf;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+section .text h1{
+    font-size: 50px;
+    color: #fff;
+    line-height: 65px;
+}
+section .text h1 span{
+    color: #98e54c;
+}
+section .text .textarea{
+    width: 600px;
+    margin-top: 20px;
+    color: #cfcfcf;
+    text-align: justify;
+    line-height: 25px;
+}
+section .text .search_bar{
+    width: 400px;
+    padding: 0 10px;
+    background: #fff;
+    margin-top: 28px;
+}
+section .search_bar input{
+    width: 359px;
+    height: 40px;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0 15px;
+}
+section .search_bar button{
+    position: absolute;
+    left: 400px;
+    width: 80px;
+    height: 40px;
+    cursor: pointer;
+    background: #98e54c;
+    border: 0;
+}
+
+
+/*Second*/
+.second{
+    width: 100%;
+    height: auto;
+    background: #000;
+    padding: 50px 0;
+}
+.second .img_box{
+    width: 100%;
+    height: 450px;
+    padding: 0 2%;
+    display: flex;
+}
+.second .img_box .img_card{
+    width: 450px;
+    height: 450px;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 35px;
+    overflow: hidden;
+}
+.second .img_box .img_card .display_text{
+    width: 450px;
+    height: 450px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 35px;
+    position: absolute;
+}
+.second .img_box .img_card .display_text p{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.second .img_box .img_card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 35px;
+}
+
+/*description_1*/
+.description_1{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    background-color: #000;
+    padding-left: 50px;
+}
+.description_1 .d_text h1{
+    color: #fff;
+    font-size: 65px;
+    font-family: 'Fredfont';
+    margin-bottom: 25px;
+}
+.description_1 .d_text .head_title{
+    margin-bottom: 15px;
+    color: #fff;
+}
+.description_1 .d_text .desc{
+    width: 650px;
+    text-align: justify;
+    color: #cfcfcf;
+    font-size: 15px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+.description_1 .d_text .dis_btn{
+    text-decoration: none;
+    color: #000;
+    padding: 8px 13px;
+    background: #98e54c;
+    font-size: 15px;
+    border-radius: 15px;
+    font-family: "Franklin Gothic Book";
+}
+.description_1 .dis_img{
+    width: 620px;
+    height: 620px;
+    border-radius: 35px;
+    overflow: hidden;
+}
+.description_1 .dis_img img{
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 35px;
+}
+
+
+
+/*Menu*/
+.menu{
+    width: 100%;
+    height: 70vh;
+    padding: 0 4%;
+    background-color: #000;
+}
+.menu p{
+    text-align: center;
+    color: #ffa800;
+    font-size: 14px;
+    margin-bottom: 2%;
+}
+.menu .M_box{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0 20px;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+.menu .M_box .M_card{
+    width: 300px;
+    height: 370px;
+    border: 1px solid #2c2c2c;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #000;
+    margin-bottom: 8px;
+    transition: 0.3s ease-in-out;
+}
+.menu .M_box .M_card .M_img{
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.menu .M_box .M_card .M_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s ease-in-out;
+}
+.menu .M_box .M_card:hover .M_img img{
+    transform: scale(1.02);
+}
+.menu .M_box .M_card:hover .M_img img{
+    transform: scale(1.02);
+}
+.menu .M_box .M_card .M_tag{
+    padding: 0 12px;
+    margin-top: 10px;
+}
+.menu .M_box .M_card .M_tag .name_star{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.menu .M_box .M_card .M_tag .name_star h1{
+    color: #fff;
+    font-size: 20px;
+}
+.menu .M_box .M_card .M_tag .price_btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu .M_box .M_card .M_tag .price_btn .M_price{
+    font-size: 19px;
+    font-weight: bold;
+}
+.menu .M_box .M_card .M_tag .price_btn button{
+    background: none;
+    border: 1px solid #ffa800;
+    color: #ffa800;
+    border-radius: 5px;
+    padding: 1px 4px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.menu .M_box .M_card .M_tag .price_btn button:hover{
+    background-color: #ffa800;
+    color: #000;
+}
+
+
+/*Footer*/
+.footer{
+    width: 100%;
+    height: 100vh;
+    padding: 30px 0 0 20px;
+}
+footer .footer_main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color: #000;
+}
+footer .footer_main .footer_tag{
+    text-align: center;
+    justify-content: center;
+}
+footer .footer_main .footer_tag h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+footer .footer_main .footer_tag p{
+    margin: 10px 0;
+    color: #fff;
+}
+
+
+
+
+/*About*/
+.about{
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+    background-color: #000;
+    
+}
+.about .about_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    left: 70px;
+}
+.about .about_main .image img{
+    width: 630px;
+    position: relative;
+    
+}
+.about .about_main .about_text h1 span{
+    color: #98e54c;
+    margin-right: 15px;
+    font-family: sans-serif;
+}
+.about .about_main .about_text h1{
+    font-size: 55px;
+    position: relative;
+    bottom: 50px;
+    
+}
+.about .about_main .about_text h3{
+    font-size: 30px;
+    margin: 0 0 50px 0;
+    color: white;
+    
+}
+.about .about_main .about_text p{
+    width: 650px;
+    text-align: justify;
+    margin-right: 30px;
+    line-height: 22px;
+    color: #fff;
+    
+}
+
+.about.about-btn {
+background: yellow;
+padding: 12px 25px;
+text-decoration: none;
+color: #fff;
+position: relative;
+left: 55%;
+bottom: 30px;
+}
+
+
+
+
+
+
+
+

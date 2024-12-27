@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+section{
+    width: 100%;
+    background-color: #f8f4ec;
+    background-size: cover;
+    background-position: center;
+}
+section nav{
+    width: 100%;
+    height: 70px;
+    padding-top: 25px;
+    background: #fff;
+}
+section nav ul {
+    list-style: none;
+    text-align: center;
+}
+section nav ul li{
+    display: inline-block;
+    font-size: 21px;
+    margin: 0 18px;
+    font-family: "Euphemia";
+    cursor: pointer;
+    transition: 0.4s;
+}
+section nav ul li{
+    color: #98e54c;
+} 
+
+
+/*Menu*/
+.menu{
+    width: 100%;
+    height: 70vh;
+    padding: 0 4%;
+}
+.menu p{
+    text-align: center;
+    color: #ffa800;
+    font-size: 14px;
+    margin-bottom: 2%;
+}
+.menu .M_box{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0 20px;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+.menu .M_box .M_card{
+    width: 300px;
+    height: 370px;
+    border: 1px solid #2c2c2c;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #000;
+    margin-bottom: 8px;
+    transition: 0.3s ease-in-out;
+}
+.menu .M_box .M_card .M_img{
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.menu .M_box .M_card .M_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s ease-in-out;
+}
+.menu .M_box .M_card:hover .M_img img{
+    transform: scale(1.02);
+}
+.menu .M_box .M_card .M_tag{
+    padding: 0 12px;
+    margin-top: 10px;
+}
+.menu .M_box .M_card .M_tag .name_star{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.menu .M_box .M_card .M_tag .name_star h1{
+    color: #fff;
+    font-size: 20px;
+}
+.menu .M_box .M_card .M_tag .price_btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu .M_box .M_card .M_tag .price_btn .M_price{
+    font-size: 19px;
+    font-weight: bold;
+}
+.menu .M_box .M_card .M_tag .price_btn button{
+    background: none;
+    border: 1px solid #ffa800;
+    color: #ffa800;
+    border-radius: 5px;
+    padding: 1px 4px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.menu .M_box .M_card .M_tag .price_btn button:hover{
+    background-color: #ffa800;
+    color: #000;
+}
